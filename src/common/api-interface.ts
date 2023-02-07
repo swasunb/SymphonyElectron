@@ -73,6 +73,7 @@ export enum apiCmds {
   updateAndRestart = 'update-and-restart',
   downloadUpdate = 'download-update',
   checkForUpdates = 'check-for-updates',
+  getProxySettings = 'get-proxy-settings',
 }
 
 export enum apiName {

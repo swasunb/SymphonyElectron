@@ -847,6 +847,15 @@ export class SSFApi {
       autoUpdateTrigger,
     });
   }
+
+  /**
+   * Allow JS to get proxy details from session
+   */
+  public getProxySettings(): Promise<string> {
+    return ipcRenderer.invoke(apiName.symphonyApi, {
+      cmd: apiCmds.getProxySettings,
+    });
+  }
 }
 
 /**

@@ -465,6 +465,8 @@ ipcMain.handle(
         break;
       case apiCmds.getCitrixMediaRedirectionStatus:
         return getCitrixMediaRedirectionStatus();
+      case apiCmds.getProxySettings:
+        return windowHandler.getMainWebContents()?.session.resolveProxy(' ');
       default:
         break;
     }

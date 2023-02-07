@@ -96,6 +96,7 @@ if (ssfWindow.ssf) {
     updateAndRestart: ssfWindow.ssf.updateAndRestart,
     downloadUpdate: ssfWindow.ssf.downloadUpdate,
     checkForUpdates: ssfWindow.ssf.checkForUpdates,
+    getProxySettings: ssfWindow.ssf.getProxySettings,
   });
 }
 
